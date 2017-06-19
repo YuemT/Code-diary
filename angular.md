@@ -4,7 +4,7 @@
 	* AngularJS特性和优点
 	* 与jQuery的比较
 	* AngularJS能做什么项目
-* 开发第一个Angular应用
+* [开发第一个Angular应用](#application)
 * 四个重要的概念
 	* 双向数据绑定
 	* 依赖注入(DI)
@@ -63,7 +63,7 @@
 	* 知乎周报: https://zhuanlan.zhihu.com/Weekly
 	* 后台管理应用: 阿里云, 土豆后台, 唯品会...
 
-## 二.开发第一个Angular应用
+## 二.开发第一个Angular应用{#application}
 #### 1.引入AnaularJS
 
 * 使用`<script>`引用AngularJS源文件  
