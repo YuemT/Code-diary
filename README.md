@@ -9,7 +9,7 @@
 * Node.js
 * Ajax
 * zepto
-* [AngularJS](Code-diary/angular.md)
+* [AngularJS](./angular.md)
 * ES5_6_7
 * modular模块化
 * project build项目构建
