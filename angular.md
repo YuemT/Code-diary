@@ -180,9 +180,9 @@
     * 为Model添加行为方法
     * 操作模型数据, 更新视图
     * View与Model之间的桥梁  
-* 在MVC中最核心的是C层，它是M层与V层的纽带
+* 在MVC中最核心的是C层，它是M层与V层的纽带  
     
-![mvc模型](./mvc.png)
+	![mvc模型](./image/mvc.png)
 
 
 ##### angular的MVVM模式
@@ -345,26 +345,30 @@
     * undefined, Infinity, NaN, null解析为空串: "", 不显示任何效果  
     `{{undefined}}`----什么都不显示
     * 对象的属性或方法
-        >html  
-         `{{abc}}`  
-         js  
-         `var module = angular.module('myCtr',[]);
-          module.controller('aaa',function ($scope) {
-              $scope.abc='abc';
-          })`  
-          页面显示的结果是abc
+
+			 html: 
+			 {{abc}}  
+
+			 js: 
+			 var module = angular.module('myCtr',[]);
+			  module.controller('aaa',function ($scope) {
+			      $scope.abc='abc';
+			  }) 
+			  页面显示的结果是abc
     * 数组  
     `{{[1,2,3,4]}}`
     * 不能使用if／for／while ---会报错
     * 可以使用三元运算符  
-        >html  
-        `{{age>18?"成年人":'未成年'}}`  
-        js  
-        `var module = angular.module('myCtr',[]);
-         module.controller('aaa',function ($scope) {
-             $scope.age = 15 ;
-         })`  
-         页面显示的结果：未成年
+    
+			html:
+			{{age>18?"成年人":'未成年'}}
+			js:  
+			var module = angular.module('myCtr',[]);
+			 module.controller('aaa',function ($scope) {
+			     $scope.age = 15 ;
+			 })  
+			 页面显示的结果：未成年
+			 
 * 比较Angular表达式与JS的表达式
     
     * Angular表达式写法与JS的表达式类同
@@ -390,19 +394,21 @@
         `<p ng-bind="123"></p>` ng-bind写法，将写在{{}}中的内容写在ng-bind=""中 ---同样利用浏览器解析的原理
     * ng-repeat:遍历数组显示数据，数组有几个元素就会产生几个新的作用域
         * $index,$first,$last,$middle,$odd,$even---除去$index，其余返回的是布尔类型的值，奇偶以0开头判断。
-        `<li ng-repeat="num in persons">第{{$index}}个------{{num}}</li>`
+		
+				<li ng-repeat="num in persons">第{{$index}}个------{{num}}</li>
     * ng-show:布尔类型，如果为true就显示
     * ng-hide:布尔类型，如果为true就隐藏 
         > 切换效果案例  
-        html  
-        `<button ng-click="switch()">切换</button>  
-           <p ng-show="isLike">我是糖糖</p>  
-           <p ng-hide="isLike">糖糖是我</p>`    
-        js   
-        `$scope.isLike = true;  
-          $scope.switch = function () {  
-              $scope.isLike = !$scope.isLike;
-          ｝`
+	
+				html  
+				<button ng-click="switch()">切换</button>  
+				   <p ng-show="isLike">我是糖糖</p>  
+				   <p ng-hide="isLike">糖糖是我</p>  
+				js   
+				$scope.isLike = true;  
+				  $scope.switch = function () {  
+				      $scope.isLike = !$scope.isLike;
+				  ｝
 
 * 常用指令(二)  
 
@@ -653,5 +659,5 @@
             });
     * 页面写法
             
-         <ui-view></ui-view>  
+         `<ui-view></ui-view> `
          用来接收请求的模板页面，并将模板页面渲染到页面中
