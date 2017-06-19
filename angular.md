@@ -1,5 +1,5 @@
 ## 目录
-* [AngularJS是什么](#AngularJS)
+* [AngularJS是什么](#angularjs)
 	* AngularJS是Google开源的 前端JS 结构化 框架
 	* AngularJS特性和优点
 	* 与jQuery的比较
@@ -27,7 +27,7 @@
 * ajax封装
 * angular-ui-router用法
 
-## 一.AngularJS是什么{#AngularJS}
+## 一.AngularJS是什么{#angularjs}
 #### 1.AngularJS是Google开源的 前端JS 结构化 框架
     动态展示页面数据，并与用户进行交互
 > https://angularjs.org/  
