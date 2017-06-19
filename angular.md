@@ -28,12 +28,12 @@
 * angular-ui-router用法
 
 ## 一.AngularJS是什么{#angularjs}
-#### 1.AngularJS是Google开源的 前端JS 结构化 框架
+#### 1.AngularJS是Google开源的 前端JS 结构化 框架{#application}
     动态展示页面数据，并与用户进行交互
 > https://angularjs.org/  
   http://www.apjs.net/  
   
-#### 2.AngularJS特性和优点
+#### 2.AngularJS特性和优点{#application}
 * 双向数据绑定  
 * 声明式依赖注入
 * 解耦应用逻辑, 数据模型和视图  
@@ -63,7 +63,7 @@
 	* 知乎周报: https://zhuanlan.zhihu.com/Weekly
 	* 后台管理应用: 阿里云, 土豆后台, 唯品会...
 
-## 二.开发第一个Angular应用{#application}
+## 二.开发第一个Angular应用
 #### 1.引入AnaularJS
 
 * 使用`<script>`引用AngularJS源文件  
