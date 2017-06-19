@@ -1,10 +1,10 @@
-##一.AngularJS是什么
-####1.Google开源的 前端JS 结构化 框架
+## 一.AngularJS是什么
+1.Google开源的 前端JS 结构化 框架
     动态展示页面数据，并与用户进行交互
 > https://angularjs.org/  
   http://www.apjs.net/  
   
-####2.AngularJS特性和优点
+#### 2.AngularJS特性和优点
 * 双向数据绑定  
 * 声明式依赖注入
 * 解耦应用逻辑, 数据模型和视图  
@@ -12,7 +12,7 @@
 * 定制表单验证
 * Ajax封装
 
-####3.与jQuery的比较
+#### 3.与jQuery的比较
 jQuery
 * JS函数库
 * 封装简化dom操作
@@ -22,7 +22,7 @@ angular
 * 主体不再是DOM, 而是页面中的动态数据
 
 
-####AngularJS能做什么项目
+#### AngularJS能做什么项目
 构建单页面(SPA)Web应用或Web App应用
 > 单页面应用(single page application)  
 将所有的活动局限于一个页面  
@@ -34,16 +34,16 @@ angular
 * 知乎周报: https://zhuanlan.zhihu.com/Weekly
 * 后台管理应用: 阿里云, 土豆后台, 唯品会...
 
-##二.开发第一个Angular应用
-####1.引入AnaularJS
+## 二.开发第一个Angular应用
+#### 1.引入AnaularJS
 
 * 使用`<script>`引用AngularJS源文件  
   	1). 本地引入:  angularjs.js  
   	2). 在线远程引入(CDN):  http://cdn.bootcss.com/angular.js/1.5.5/angular.min.js
 
-####2.使用AngularJS 
+#### 2.使用AngularJS 
 
-#####在页面中使用Angular的指令和表达式  
+##### 在页面中使用Angular的指令和表达式  
 
 1.ng-app(指令)   
   	   
@@ -55,7 +55,7 @@ angular
 3.{{name}}(表达式)
 > 显示数据,从作用域对象的指定属性名上取
 
-#####表达式和语句概念上的区别：
+##### 表达式和语句概念上的区别：
 1.表达式：  
 通常有一个返回值，可以放在任何需要值得地方，比如函数调用的参数，一个变量名，一个运算    
 
@@ -67,7 +67,7 @@ angular
        
 > 特例：if语句，就不用加分号，也是完整的语句。
        
-####3.实例：第一个Angular程序  
+#### 3.实例：第一个Angular程序  
 
           <!DOCTYPE html>
           <html ng-app="">
@@ -87,7 +87,7 @@ angular
 2.当域对象的属性数据发生改变时，angular会更新其对应的页面显示
 
           
-####4.对比jQuery
+#### 4.对比jQuery
 
         <!DOCTYPE html>
         <html>
@@ -109,8 +109,8 @@ angular
             <p>你输入的用户名为：<span id="resultSpan">还未输入</span></p>
         </body>
         </html>
-##三.四个重要的概念
-####1.双向数据绑定  
+## 三.四个重要的概念
+#### 1.双向数据绑定  
 * View(视图): 页面(标签、指令、表达式)
 * Model(模型) : 作用域对象(属性、方法)
 * 数据绑定:  
@@ -131,7 +131,7 @@ angular
     * ng-init  用来初始化当前作用域变量。
         > 数据从View==>Model
     
-####2.依赖注入(DI)
+#### 2.依赖注入(DI)
 * 依赖的对象被别人(调用者)自动注入进来
 
      Dependency Injection
@@ -160,8 +160,8 @@ angular
 > 声明式和命令式的区别
  声明式是命令式的局部包装，声明式注重执行的结果，命令式注重执行的过程
 
-####3.MVC模式
-#####传统MVC模式
+#### 3.MVC模式
+##### 传统MVC模式
 * M:Model,模型，在angular中:
     * 为scope
     * 存储数据的容器(实体模型)
@@ -182,15 +182,15 @@ angular
     
 ![mvc模型](./mvc.png)
 
-#####angular的MVVM模式
+##### angular的MVVM模式
 * M: Model, 即数据模型, 在angular中:为scope中的各个数据对象
 * V: View, 即视图, 在angular中:为页面
 * VM: ViewModel, 即视图模型, 在angular中:为scope对象
 * 在angular中controller不再是架构的核心，在MVVM中只是起辅助作用，用来辅助$scope对象，即VM层
 
-##四.四个重要对象
+## 四.四个重要对象
 
-####1.作用域(scope)
+#### 1.作用域(scope)
 
 * 是一个js实例对象 
 * 这个对象的属性、方法，页面都可以直接引用、操作
@@ -198,7 +198,7 @@ angular
 * 给域对象指定方法
     `$scope.fun=function(){}`
     
-####2.控制器(controller)
+#### 2.控制器(controller)
 * 也是一个对象，是我们View与Model之间的桥梁
 * 当我们使用了ng-controller指令， 内部就会创建控制器对象
 * 用来控制AngularJS应用数据的实例对象
@@ -212,7 +212,7 @@ angular
           }  
    > instanceof 判断一个对象是否是构造函数的实例对象
         
-####3.模块(module)
+#### 3.模块(module)
 * 也是一个对象
 * 创建模块对象---使用全局变量angular对象创建  
 ` angular.module('模块名', [依赖的模块])`
@@ -250,7 +250,7 @@ angular
                 b.empName = 'Jack';
         }])
         
-####4.服务
+#### 4.服务
 * 是什么？ 具有特定功能的对象（object对象、函数，数组，基本类型）
 
 * 理解服务的概念
@@ -326,8 +326,8 @@ angular
     * 如何引入：声明式依赖注入
 
 
-##五.三个页面语法
-####1.表达式
+## 五.三个页面语法
+#### 1.表达式
 * 使用Angular表达式
 
     * 语法: {{expression}}
@@ -368,7 +368,7 @@ angular
     * 与JS表达式不同，AngularJS 表达式不支持条件判断，循环及异常。
     * 与JS表达式不同，AngularJS 表达式支持过滤器。
     
-####2.指令
+#### 2.指令
 * Angular指令 
     * Angular为HTML页面扩展的属性,标签
     * 与Angular的Model交互,扩展页面的动态表现力
@@ -461,7 +461,7 @@ angular
 
     * ng-mouseleave: 鼠标移出监听, 值为函数调用, 可以传$event
 
-####3.过滤器
+#### 3.过滤器
 * 作用：在显示数据时可以对数据进行格式化或过滤
 
     * 单个--->格式化（将别的类型的数据转换为特定格式的字符串）
@@ -502,9 +502,9 @@ angular
             {{[{id:22,price:35}, {id:23, price:45}] | filter:{id:'3'}} //根据id过滤
             {{[{id:22,price:35}, {id:23, price:45}] | filter:{$:'3'}} //根据所有字段过滤
             	
-##六.三个对象使用详解
-####1.angular对象
-#####由angular.js提供的全局变量
+## 六.三个对象使用详解
+#### 1.angular对象
+##### 由angular.js提供的全局变量
 方法:
 * module() : 创建模型对象
 * bootstrap() : 编码启动angular, 代替ng-app
@@ -514,8 +514,8 @@ angular
 * isArray(),isObject(),isFunction() : 类型判断
 * lowercase()和uppercase() : 大小写转换
 
-####2.module对象
-#####由angular.module()创建
+#### 2.module对象
+##### 由angular.module()创建
 方法:
  * controller() : 定义控制器
 * factory() : 定义服务对象
@@ -524,7 +524,7 @@ angular
 * config() : 指定做一些配置的回调函数
 * directive() : 定义指令
 
-####3.$scope对象
+#### 3.$scope对象
 * $apply(): 强制脏数据检查
      * 当scope中的数据发生了改变, angular会将数据同步显示到页面, 这一操作称为"脏数据检查"
      * angular在它的方法执行完后, 都会进行脏数据检查
@@ -547,12 +547,12 @@ angular
         * 参数三: 是否深度监视, 默认是false, 代表只是监视属性本身, 而不监视其内部数据
         * 返回值: 用于取消监视的函数, 调用unWatch()取消监视
 
-##七.两个angular扩展模块
+## 七.两个angular扩展模块
 1. angular-animate
 
 2. angular-route
 
-##八.ajax封装
+## 八.ajax封装
 1. angular通过$http服务来提交ajax请求
 2. GET请求
 
@@ -611,13 +611,13 @@ angular
                    alert(data);
                });
 
-##九.angular-ui-router用法
-####1.历史
+## 九.angular-ui-router用法
+#### 1.历史
 * Angular.js首次发布ngRoute的时候，是有类似功能的路由存在的。angular-router
 * AngularJS官方称，从1.1.6版本将ngRoute从angular.js核心中删除（更多的说法是1.2）。  
     ngRoute依然可以从AngularJS的官网上获得，但是它早已不在核心之中。
 * AngularJS的社区认为，更受欢迎的路由库是AngularUI 项目的UI-Router。
-####2.ui-router
+#### 2.ui-router
 * UI-Router被认为是AngularUI为开发者提供的最实用的一个模块，  
 它是一个让开发者能够根据URL状态或者说是'机器状态'来组织和控制界面UI的渲染，  
 而不是仅仅只改变路由（传统AngularJS应用实用的方式）。  
