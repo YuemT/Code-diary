@@ -26,14 +26,14 @@
 * 两个angular扩展模块
 * ajax封装
 * angular-ui-router用法
-## 1.{#angularjs}
+
 ## 一.AngularJS是什么
-#### 1.AngularJS是Google开源的 前端JS 结构化 框架{#application}
+#### 1.AngularJS是Google开源的 前端JS 结构化 框架
     动态展示页面数据，并与用户进行交互
 > https://angularjs.org/  
   http://www.apjs.net/  
   
-#### 2.AngularJS特性和优点{#application}
+#### 2.AngularJS特性和优点
 * 双向数据绑定  
 * 声明式依赖注入
 * 解耦应用逻辑, 数据模型和视图  
