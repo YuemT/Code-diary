@@ -5,27 +5,27 @@
 	* 与jQuery的比较
 	* AngularJS能做什么项目
 * [开发第一个Angular应用](#application)
-* 四个重要的概念
+* [四个重要的概念](#concept)
 	* 双向数据绑定
 	* 依赖注入(DI)
 	* MVC模式
 	* MVVM模式
-* 四个重要对象
+* [四个重要对象](#object)
 	* 作用域(scope)
 	* 控制器(controller)
 	* 模块(module)
 	* 服务
-* 三个页面语法
+* [三个页面语法](#grammar)
 	* 表达式
 	* 指令
 	* 过滤器
-* 三个对象使用详解
+* [三个对象使用详解](#detail)
 	* angular对象
 	* module对象
 	* $scope对象
-* 两个angular扩展模块
-* ajax封装
-* angular-ui-router用法
+* [两个angular扩展模块](#extend)
+* [ajax封装](#ajax)
+* [angular-ui-router用法](#router)
 
 ## <div id='angularjs'>一.AngularJS是什么</div>
 #### 1.AngularJS是Google开源的 前端JS 结构化 框架
@@ -63,7 +63,7 @@
 	* 知乎周报: https://zhuanlan.zhihu.com/Weekly
 	* 后台管理应用: 阿里云, 土豆后台, 唯品会...
 
-## 二.开发第一个Angular应用
+## <div id='application'>二.开发第一个Angular应用</div>
 #### 1.引入AnaularJS
 
 * 使用`<script>`引用AngularJS源文件  
@@ -138,7 +138,9 @@
             <p>你输入的用户名为：<span id="resultSpan">还未输入</span></p>
         </body>
         </html>
-## 三.四个重要的概念
+	
+	
+## <div id='concept'>三.四个重要的概念</div>
 #### 1.双向数据绑定  
 * View(视图): 页面(标签、指令、表达式)
 * Model(模型) : 作用域对象(属性、方法)
@@ -221,7 +223,8 @@
 * 在MVVM中，最核心的是VM层，controller只是起辅助作用，用来辅助$scope对象，其他的同MVC一样，MVVM是MVC升级版，angular应用的就是MVVM架构模式。
  
 
-## 四.四个重要对象
+
+## <div id='object'>四.四个重要对象</div>
 
 #### 1.作用域(scope)
 
@@ -358,8 +361,8 @@
         })
     * 如何引入：声明式依赖注入
 
-
-## 五.三个页面语法
+ 
+## <div id='grammar'>五.三个页面语法</div>
 #### 1.表达式
 * 使用Angular表达式
 
@@ -541,8 +544,9 @@
             
             {{[{id:22,price:35}, {id:23, price:45}] | filter:{id:'3'}} //根据id过滤
             {{[{id:22,price:35}, {id:23, price:45}] | filter:{$:'3'}} //根据所有字段过滤
-            	
-## 六.三个对象使用详解
+     
+     
+## <div id='detail'>六.三个对象使用详解</div>
 #### 1.angular对象
 ##### 由angular.js提供的全局变量
 方法:
@@ -587,12 +591,13 @@
         * 参数三: 是否深度监视, 默认是false, 代表只是监视属性本身, 而不监视其内部数据
         * 返回值: 用于取消监视的函数, 调用unWatch()取消监视
 
-## 七.两个angular扩展模块
+
+## <div id='extend'>七.两个angular扩展模块</div>
 1. angular-animate
 
 2. angular-route
 
-## 八.ajax封装
+## <div id='ajax'>八.ajax封装</div>
 1. angular通过$http服务来提交ajax请求
 2. GET请求
 
@@ -651,7 +656,8 @@
                    alert(data);
                });
 
-## 九.angular-ui-router用法
+
+## <div id='router'>九.angular-ui-router用法</div>
 #### 1.历史
 * Angular.js首次发布ngRoute的时候，是有类似功能的路由存在的。angular-router
 * AngularJS官方称，从1.1.6版本将ngRoute从angular.js核心中删除（更多的说法是1.2）。  
