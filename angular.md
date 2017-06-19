@@ -1,5 +1,5 @@
 ## 一.AngularJS是什么
-1.Google开源的 前端JS 结构化 框架
+#### 1.AngularJS是Google开源的 前端JS 结构化 框架
     动态展示页面数据，并与用户进行交互
 > https://angularjs.org/  
   http://www.apjs.net/  
@@ -22,7 +22,7 @@
 	* 主体不再是DOM, 而是页面中的动态数据
 
 
-#### AngularJS能做什么项目
+#### 4.AngularJS能做什么项目
 * 构建单页面(SPA)Web应用或Web App应用
 	> 单页面应用(single page application)  
 	将所有的活动局限于一个页面  
@@ -38,21 +38,21 @@
 #### 1.引入AnaularJS
 
 * 使用`<script>`引用AngularJS源文件  
-  	1). 本地引入:  angularjs.js  
-  	2). 在线远程引入(CDN):  http://cdn.bootcss.com/angular.js/1.5.5/angular.min.js
+  	* 本地引入:  angularjs.js  
+  	* 在线远程引入(CDN):  http://cdn.bootcss.com/angular.js/1.5.5/angular.min.js
 
 #### 2.使用AngularJS 
 
 * 在页面中使用Angular的指令和表达式  
 
-	1.ng-app(指令)   
-		> 告诉angular核心它管理当前标签所包含的整个区域,并且会自动创建$rootScope根作用域对象
+1. ng-app(指令)   
+	> 告诉angular核心它管理当前标签所包含的整个区域,并且会自动创建$rootScope根作用域对象
 
-	2.ng-model(指令)   
-		> 将当前输入框的值与谁关联(属性名:属性值), 并作为当前作用域对象($rootScope)的属性
+2. ng-model(指令)   
+	> 将当前输入框的值与谁关联(属性名:属性值), 并作为当前作用域对象($rootScope)的属性
 
-	3.{{name}}(表达式)
-		> 显示数据,从作用域对象的指定属性名上取
+3. {{name}}(表达式)
+	> 显示数据,从作用域对象的指定属性名上取
 
 * 表达式和语句概念上的区别：
 	1. 表达式：  
