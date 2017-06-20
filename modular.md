@@ -1,10 +1,40 @@
+## 目录
+## 模块化-js模块化
+* 扩展阅读
+* [理解模块化的概念及由来](#a)
+    * 什么是模块／模块化？
+    * 模块化的进化史
+        * 全局function模式
+        * namespace模式
+        * IIFE模式
+        * IIFE模式增强(引入依赖)
+* 模块化规范
+    * [CommonJS](#b)
+    * [AMD:浏览器端](#c)
+    * [CMD : 浏览器端](#d)
+    * [ES6](#e)
+* CommonJS模块化实例操作
+    * [CommonJS_Node模块化教程](#f)
+    * [CommonJS-Browserify模块化教程](#g)
+* [AMD-RequireJS模块化实例操作](#h)
+* [CMD-SeaJS模块化教程](#i)
+* ES6模块化教程
+    * [ES6-Babel-Browserify使用教程](#j)
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 ## 模块化-js模块化
 ### 扩展阅读
 * https://github.com/seajs/seajs/issues/588(前端模块化开发那点历史)
 * http://zccst.iteye.com/blog/2215317(CommonJS，AMD，CMD区别)
 * http://www.zhihu.com/question/20351507/answer/14859415(AMD和CMD 的区别)
 * http://www.ruanyifeng.com/blog/2012/10/javascript_module.html(Javascript模块化编程)
-### 一.理解模块化的概念及由来
+### <div id='a'>一.理解模块化的概念及由来</div>  
 ### 1.什么是模块／模块化？
 * 将一个复杂的程序依据一定的规则(规范)，封装成几个块(文件)，再进行组合在一起。
 * 块的内部数据/实现是内部私有的，只向外部暴露一些接口(方法)，与外部其他模块通信。
@@ -21,14 +51,14 @@
     编码: 全局变量／函数(将不同的功能封装成不同的全局函数)  
     问题: Global全局命名空间被污染了, 很容易引起命名冲突/数据不安全
     
-    ![Global](./img/1.png)
+    ![Global](./image/1.png)
 
 * namespace模式  
     * 编码: 将数据/行为封装到对象中
     * 作用: 减少了全局变量(命名冲突)
     * 问题: 数据不安全(数据不是私有的, 外部可以直接修改模块内部的数据)
     
-    ![namespace](./img/2.png)
+    ![namespace](./image/2.png)
     
 * IIFE模式
      * IIFE模式: 立即调用函数表达式---> 匿名函数自调用(闭包)
@@ -37,11 +67,11 @@
      * 作用: 数据是私有的, 外部只能通过暴露的方法操作
      * 问题: 如果当前这个模块依赖另一个模块怎么办?
      
-     ![namespace](./img/3.png)
+     ![namespace](./image/3.png)
      
 * IIFE模式增强
 
-    ![namespace](./img/4.png)
+    ![namespace](./image/4.png)
      * 引入依赖:通过函数形参来引入依赖模块 
      * 这就是现代模块实现的基石  
                 
@@ -60,7 +90,7 @@
     
 * 页面引入加载script引出的问题 
 
-     ![namespace](./img/6.png)
+     ![namespace](./image/6.png)
      
     * 一个页面需要引入多个js文件
     * 请求过多:我们要依赖多个模块，那样就会发送多个请求，导致请求过多
@@ -75,10 +105,10 @@
         * 更高复用性
         * 高可维护性
         
-        ![namespace](./img/5.png)
+        ![namespace](./image/5.png)
 
 ### 二.模块化规范
-### 1.CommonJS
+### <div id='b'>1.CommonJS</div>  
 #### 规范：
 * http://wiki.commonjs.org/wiki/Modules/1.1
 * 每个文件都可当作一个模块
@@ -109,7 +139,7 @@
     * Browserify : 在运行前对模块进行编译/转译/打包的处理(已经将依赖的模块包含进来了), 
                       运行的是打包生成的js, 运行时不存在需要再从远程引入依赖模块
 
-### 2.AMD:浏览器端
+### <div id='c'>2.AMD:浏览器端</div>  
 #### 规范
 
 * Asynchronous Module Definition(异步模块定义)
@@ -163,7 +193,7 @@
     * http://www.requirejs.cn/
     * http://www.ruanyifeng.com/blog/2012/11/require_js.html
 
-### 3.CMD : 浏览器端
+### <div id='d'>3.CMD : 浏览器端</div>  
 
 规范
 *  Common Module Definition(通用模块定义)
@@ -206,7 +236,7 @@
     * http://www.zhangxinxu.com/sp/seajs/
     
     
-### 4.ES6
+### <div id='e'>4.ES6</div>  
 规范
 * ES6内置了模块化的实现
 * http://es6.ruanyifeng.com/#docs/module
@@ -244,7 +274,7 @@
 ------------
 
 ## CommonJS模块化实例操作
-##### 1.CommonJS_Node模块化教程
+### <div id='f'>1.CommonJS_Node模块化教程</div>  
 1. 下载安装node.js
 2. 创建项目结构
       
@@ -320,7 +350,7 @@
   * 命令: node app.js
   * 工具: 右键-->运行
   
-##### 2.CommonJS-Browserify模块化教程
+### <div id='g'>2.CommonJS-Browserify模块化教程</div>  
 1. 创建项目结构
           
           |-js
@@ -390,7 +420,7 @@
   
   
 
-## AMD-RequireJS模块化实例操作
+## <div id='h'>AMD-RequireJS模块化实例操作</div>  
 1. 下载require.js, 并引入
   * 官网: http://www.requirejs.cn/
   * github : https://github.com/requirejs/requirejs
@@ -528,7 +558,7 @@
           <div style="color: red;" ng-show="myForm.username.$dirty&&myForm.username.$invalid">用户名是必须的</div>
         </form>
     
-## CMD-SeaJS模块化教程
+## <div id='i'>CMD-SeaJS模块化教程</div>  
 
 1. 下载sea.js, 并引入
   * 官网: http://seajs.org/
@@ -623,7 +653,7 @@
           </script>
       
 ## ES6模块化教程
-## ES6-Babel-Browserify使用教程
+### <div id='j'>ES6-Babel-Browserify使用教程</div>  
 1. 定义package.json文件
       
           {
