@@ -1,4 +1,33 @@
-## 一.AngularJS是什么
+## 目录
+* [AngularJS是什么](#angularjs)
+	* AngularJS是Google开源的 前端JS 结构化 框架
+	* AngularJS特性和优点
+	* 与jQuery的比较
+	* AngularJS能做什么项目
+* [开发第一个Angular应用](#application)
+* [四个重要的概念](#concept)
+	* 双向数据绑定
+	* 依赖注入(DI)
+	* MVC模式
+	* MVVM模式
+* [四个重要对象](#object)
+	* 作用域(scope)
+	* 控制器(controller)
+	* 模块(module)
+	* 服务
+* [三个页面语法](#grammar)
+	* 表达式
+	* 指令
+	* 过滤器
+* [三个对象使用详解](#detail)
+	* angular对象
+	* module对象
+	* $scope对象
+* [两个angular扩展模块](#extend)
+* [ajax封装](#ajax)
+* [angular-ui-router用法](#router)
+
+## <div id='angularjs'>一.AngularJS是什么</div>
 #### 1.AngularJS是Google开源的 前端JS 结构化 框架
     动态展示页面数据，并与用户进行交互
 > https://angularjs.org/  
@@ -34,7 +63,7 @@
 	* 知乎周报: https://zhuanlan.zhihu.com/Weekly
 	* 后台管理应用: 阿里云, 土豆后台, 唯品会...
 
-## 二.开发第一个Angular应用
+## <div id='application'>二.开发第一个Angular应用</div>
 #### 1.引入AnaularJS
 
 * 使用`<script>`引用AngularJS源文件  
@@ -109,7 +138,9 @@
             <p>你输入的用户名为：<span id="resultSpan">还未输入</span></p>
         </body>
         </html>
-## 三.四个重要的概念
+	
+	
+## <div id='concept'>三.四个重要的概念</div>
 #### 1.双向数据绑定  
 * View(视图): 页面(标签、指令、表达式)
 * Model(模型) : 作用域对象(属性、方法)
@@ -180,9 +211,9 @@
     * 为Model添加行为方法
     * 操作模型数据, 更新视图
     * View与Model之间的桥梁  
-* 在MVC中最核心的是C层，它是M层与V层的纽带
+* 在MVC中最核心的是C层，它是M层与V层的纽带  
     
-![mvc模型](./mvc.png)
+	![mvc模型](./image/mvc.png)
 
 
 ##### angular的MVVM模式
@@ -192,7 +223,8 @@
 * 在MVVM中，最核心的是VM层，controller只是起辅助作用，用来辅助$scope对象，其他的同MVC一样，MVVM是MVC升级版，angular应用的就是MVVM架构模式。
  
 
-## 四.四个重要对象
+
+## <div id='object'>四.四个重要对象</div>
 
 #### 1.作用域(scope)
 
@@ -329,8 +361,8 @@
         })
     * 如何引入：声明式依赖注入
 
-
-## 五.三个页面语法
+ 
+## <div id='grammar'>五.三个页面语法</div>
 #### 1.表达式
 * 使用Angular表达式
 
@@ -345,26 +377,30 @@
     * undefined, Infinity, NaN, null解析为空串: "", 不显示任何效果  
     `{{undefined}}`----什么都不显示
     * 对象的属性或方法
-        >html  
-         `{{abc}}`  
-         js  
-         `var module = angular.module('myCtr',[]);
-          module.controller('aaa',function ($scope) {
-              $scope.abc='abc';
-          })`  
-          页面显示的结果是abc
+
+			 html: 
+			 {{abc}}  
+
+			 js: 
+			 var module = angular.module('myCtr',[]);
+			  module.controller('aaa',function ($scope) {
+			      $scope.abc='abc';
+			  }) 
+			  页面显示的结果是abc
     * 数组  
     `{{[1,2,3,4]}}`
     * 不能使用if／for／while ---会报错
     * 可以使用三元运算符  
-        >html  
-        `{{age>18?"成年人":'未成年'}}`  
-        js  
-        `var module = angular.module('myCtr',[]);
-         module.controller('aaa',function ($scope) {
-             $scope.age = 15 ;
-         })`  
-         页面显示的结果：未成年
+    
+			html:
+			{{age>18?"成年人":'未成年'}}
+			js:  
+			var module = angular.module('myCtr',[]);
+			 module.controller('aaa',function ($scope) {
+			     $scope.age = 15 ;
+			 })  
+			 页面显示的结果：未成年
+			 
 * 比较Angular表达式与JS的表达式
     
     * Angular表达式写法与JS的表达式类同
@@ -385,24 +421,27 @@
     * ng-controller: 指定控制器构造函数名，内部会自动创建一个新的子作用域（外部的）
     * ng-bind:解决使用{{}}显示数据闪屏(在很短时间内显示{{}})
     
-        > 由于页面从上至下加载，在浏览器解析到html部分时还没有读到angular.js,浏览器会以普通字符串的形式解析{{}}，在很短的时间以后，页面解析到angular.js后页面恢复正常解析{{}}  
+        	由于页面从上至下加载，在浏览器解析到html部分时还没有读到angular.js,浏览器会以普通字符串的形式解析{{}}，在很短的时间以后，页面解析到angular.js后页面恢复正常解析{{}}  
+		
         `<p>{{123}}</p>`  常规写法
         `<p ng-bind="123"></p>` ng-bind写法，将写在{{}}中的内容写在ng-bind=""中 ---同样利用浏览器解析的原理
     * ng-repeat:遍历数组显示数据，数组有几个元素就会产生几个新的作用域
         * $index,$first,$last,$middle,$odd,$even---除去$index，其余返回的是布尔类型的值，奇偶以0开头判断。
-        `<li ng-repeat="num in persons">第{{$index}}个------{{num}}</li>`
+		
+				<li ng-repeat="num in persons">第{{$index}}个------{{num}}</li>
     * ng-show:布尔类型，如果为true就显示
     * ng-hide:布尔类型，如果为true就隐藏 
         > 切换效果案例  
-        html  
-        `<button ng-click="switch()">切换</button>  
-           <p ng-show="isLike">我是糖糖</p>  
-           <p ng-hide="isLike">糖糖是我</p>`    
-        js   
-        `$scope.isLike = true;  
-          $scope.switch = function () {  
-              $scope.isLike = !$scope.isLike;
-          ｝`
+	
+				html  
+				<button ng-click="switch()">切换</button>  
+				   <p ng-show="isLike">我是糖糖</p>  
+				   <p ng-hide="isLike">糖糖是我</p>  
+				js   
+				$scope.isLike = true;  
+				  $scope.switch = function () {  
+				      $scope.isLike = !$scope.isLike;
+				  ｝
 
 * 常用指令(二)  
 
@@ -505,8 +544,9 @@
             
             {{[{id:22,price:35}, {id:23, price:45}] | filter:{id:'3'}} //根据id过滤
             {{[{id:22,price:35}, {id:23, price:45}] | filter:{$:'3'}} //根据所有字段过滤
-            	
-## 六.三个对象使用详解
+     
+     
+## <div id='detail'>六.三个对象使用详解</div>
 #### 1.angular对象
 ##### 由angular.js提供的全局变量
 方法:
@@ -551,12 +591,13 @@
         * 参数三: 是否深度监视, 默认是false, 代表只是监视属性本身, 而不监视其内部数据
         * 返回值: 用于取消监视的函数, 调用unWatch()取消监视
 
-## 七.两个angular扩展模块
+
+## <div id='extend'>七.两个angular扩展模块</div>
 1. angular-animate
 
 2. angular-route
 
-## 八.ajax封装
+## <div id='ajax'>八.ajax封装</div>
 1. angular通过$http服务来提交ajax请求
 2. GET请求
 
@@ -615,7 +656,8 @@
                    alert(data);
                });
 
-## 九.angular-ui-router用法
+
+## <div id='router'>九.angular-ui-router用法</div>
 #### 1.历史
 * Angular.js首次发布ngRoute的时候，是有类似功能的路由存在的。angular-router
 * AngularJS官方称，从1.1.6版本将ngRoute从angular.js核心中删除（更多的说法是1.2）。  
@@ -653,5 +695,5 @@
             });
     * 页面写法
             
-         <ui-view></ui-view>  
+         `<ui-view></ui-view> `
          用来接收请求的模板页面，并将模板页面渲染到页面中
