@@ -10,8 +10,8 @@
 * Ajax
 * zepto
 * [AngularJS](./angular.md)
-* ES5_6_7
-* modular模块化
+* [ES5_6_7](./ES5_6_7.md)
+* [modular模块化](./modular.md)
 * project build项目构建
 * React
 
