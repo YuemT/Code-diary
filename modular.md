@@ -528,7 +528,7 @@
           <div style="color: red;" ng-show="myForm.username.$dirty&&myForm.username.$invalid">用户名是必须的</div>
         </form>
     
-##CMD-SeaJS模块化教程
+## CMD-SeaJS模块化教程
 
 1. 下载sea.js, 并引入
   * 官网: http://seajs.org/
@@ -622,7 +622,7 @@
             seajs.use('./js/modules/main')
           </script>
       
-##ES6模块化教程
+## ES6模块化教程
 ## ES6-Babel-Browserify使用教程
 1. 定义package.json文件
       
