@@ -3,7 +3,7 @@
 ## 目录
 * [HTML](html.md)
 * [CSS](css.md)
-* JavaScript
+* [JavaScript](JavaScript.md)
 * jQuery
 * HTML5+CSS3
 * 移动端
