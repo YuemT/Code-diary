@@ -5,7 +5,7 @@ JavaScript是运行在浏览器端一门脚本语言，JavaScript的标准称为
 * ES标准
 * DOM
 * BOM	
-#### 一.简介<div id='a'>&nbsp;</div>
+#### <div id='a'>一.简介</div>
 1. 简介
 2. JS代码的编写位置
     * 编写在标签内部的指定属性中
@@ -97,7 +97,7 @@ JavaScript是运行在浏览器端一门脚本语言，JavaScript的标准称为
     * 一个代码块中的语句要么都执行，要么都不执行
     * 在JS中{    }只有分组的作用，没有其他的任何作用
     * 代码块中的内容，对于外部来说是可见的
-#### 二.基本数据类型（5种）<div id='b'></div>
+#### <div id='b'>二.基本数据类型（5种）</div>
 1. String（字符串）
 
     * 在JS中字符串需要使用引号引起来，单引号或双引号
@@ -146,18 +146,18 @@ JavaScript是运行在浏览器端一门脚本语言，JavaScript的标准称为
     - Undefined表示声明但没有赋值的变量值是undefined
     - 它只有一个值：undefined
     - 使用typeof检查时，会返回undefined
-#### 三.数据类型的转换<div id='c'></div>
+#### <div id='c'>三.数据类型的转换</div>
 1. String
 2. Number
 3. Boolean
-#### 四.引用数据类型<div id='d'></div>
+#### <div id='d'>四.引用数据类型</div>
 Object（对象） 
 1. 对象的分类
 2. 对象的创建
 3. 对象的属性的操作
 4. 函数（function）
-#### 五.基本数据类型和引用数据类型的区别<div id='e'></div>
-#### 六.函数（function）<div id='f'></div>
+#### <div id='e'>五.基本数据类型和引用数据类型的区别</div>
+#### <div id='f'>六.函数（function）</div>
 1. 函数的创建
 2. 函数的调用
 3. 参数
@@ -167,15 +167,15 @@ Object（对象）
 7. 原型（prototype）
 8. call()和apply()
 9. this（上下文对象）
-#### 七.数组（Array）<div id='g'></div>
+#### <div id='g'>七.数组（Array）</div>
 1. 创建数组对象
 2. 向数组中添加元素
 3. 读取数组中的元素
 4. 数组的属性和方法
 5. 遍历数组
-#### 八.包装类<div id='h'></div>
+#### <div id='h'>八.包装类</div>
 String
-#### 九.运算符（操作符）<div id='i'></div>
+#### <div id='i'>九.运算符（操作符）</div>
 1. typeof
 2. 算数运算符
 3. 一元运算符
@@ -189,46 +189,46 @@ String
     * 关系运算符
     * 相等运算符
     * 三元运算符?:
-#### 十.流程控制语句<div id='j'></div>
+#### <div id='j'>十.流程控制语句</div>
 1. 条件判断语句（if语句）
 2. 条件分支语句switch...case
 3. 循环语句
     * while
     * do...while
     * for
-#### 十一.正则表达式<div id='k'></div>
+#### <div id='k'>十一.正则表达式</div>
 1. 创建正则表达式的对象
 2. 方法
 3. 匹配模式
 4. 基本语法
-#### 十二.作用域<div id='l'></div>
+#### <div id='l'>十二.作用域</div>
 1. 全局作用域
 2. 函数作用域
 3. 声明提前
     * 变量的声明提前
     * 函数的声明提前
-#### 十二.样式的操作<div id='m'></div>
+#### <div id='m'>十三.样式的操作</div>
 1. 操作内联样式
 2. 读取元素当前的样式
 3. 其他样式相关的属性,其他获取样式的方式
-#### 十三.事件(event)<div id='n'></div>
+#### <div id='n'>十四.事件(event)</div>
 1. 绑定事件的响应函数
 2. 事件对象
 3. 事件的冒泡
 4. 事件的绑定
 
-#### 十四.DOM<div id='o'></div>
+#### <div id='o'>十五.DOM</div>
 1. 节点（Node）
 2. 常用的节点
 3. DOM的查询方法
 4. DOM的修改
 
-#### 十五.BOM<div id='p'></div>
+#### <div id='p'>十六.BOM</div>
 1. BOM对象
 2. Navigator
 3. History
 4. Location
-#### 其他补充<div id='q'></div>
+#### <div id='q'>其他补充</div>
 
 1. Math
 2. Date
