@@ -4,7 +4,7 @@
 * [HTML](html.md)
 * [CSS](css.md)
 * [JavaScript](JavaScript.md)
-* [JS Advance](JS Advance.md)
+* [JS Advance](JSAdvance.md)
 * jQuery
 * HTML5+CSS3
 * 移动端
