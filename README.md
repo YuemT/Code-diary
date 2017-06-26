@@ -4,6 +4,7 @@
 * [HTML](html.md)
 * [CSS](css.md)
 * [JavaScript](JavaScript.md)
+* [JS Advance](JS Advance.md)
 * jQuery
 * HTML5+CSS3
 * 移动端
@@ -15,4 +16,7 @@
 * [modular模块化](./modular.md)
 * project build项目构建
 * React
+* 版本控制
+    * svn
+    * git
 
