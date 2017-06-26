@@ -1,9 +1,9 @@
 ## 目录
 ## [基础总结深入](#one) 
-#### [一.数据类型](#)
-1. [分类](#)
-2. [判断](#)
-3. [undefined与null的区别?](#)
+#### [一.数据类型](#a)
+1. [分类](#a1)
+2. [判断](#a2)
+3. [undefined与null的区别?](#a3)
 4. [什么时候给变量赋值为null呢?](#)
 5. [严格区别变量类型与数据类型？](#)
 #### [二. 数据 变量 内存](#)
@@ -88,9 +88,9 @@
                     
                     
 
-## <div id='one'></div>基础总结深入
-#### 一.数据类型
-1. 分类
+## <div id='one'></div>基础总结深入<div id=''></div>
+#### <div id='a'></div>一.数据类型
+1. 分类<div id='a1'></div>
     * 基本(值)类型
         * String: 任意字符串
         * Number: 任意的数字
@@ -101,7 +101,7 @@
         * Object: 任意对象
         * Function: 一种特别的对象(可以执行)
         * Array: 一种特别的对象(数值下标, 内部数据是有序的)
-2. 判断
+2. 判断<div id='a2'></div>
     * typeof:(typeof 返回的是字符串)
         * 可以判断：undefined/ 数值 / 字符串 / 布尔值 / function
         * 不可以判断：null与object  object与array   
@@ -135,7 +135,7 @@
               b1.b2[2]();
               b1.b3()()(); //返回 ++++++
               
-3. undefined与null的区别?
+3. undefined与null的区别?<div id='a3'></div>
     * undefined代表定义未赋值
         
               var a
