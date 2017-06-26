@@ -16,7 +16,7 @@
 * [modular模块化](./modular.md)
 * project build项目构建
 * React
-* 版本控制
-    * svn
-    * git
+* [版本控制](./版本控制工具.md)
+    * SVN
+    * Git
 
