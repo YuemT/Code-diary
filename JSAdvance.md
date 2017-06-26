@@ -373,7 +373,8 @@
 ## 函数高级
 #### 一.原型
 1. 原型
-    * 函数的prototype属性(图)
+    * 函数的prototype属性
+        ![](./image/函数的protype属性.png)
       * 每个函数都有一个prototype属性, 它默认指向一个Object空对象(即称为: 原型对象)
             
                   // 每个函数都有一个prototype属性, 它默认指向一个Object空对象(即称为: 原型对象)
@@ -401,7 +402,7 @@
     * 每个函数function都有一个prototype，即显式原型(属性)
     * 每个实例对象都有一个__proto__，可称为隐式原型(属性)
     * 对象的隐式原型的值为其对应构造函数的显式原型的值
-    * 内存结构![显式原型与隐式原型](./显式原型与隐式原型.png)
+    * 内存结构![显式原型与隐式原型](./image/显式原型与隐式原型.png)
     * 总结:
       * 函数的prototype属性: 在定义函数时自动添加的, 默认值是一个空Object对象
       * 对象的__proto__属性: 创建对象时自动添加的, 默认值为构造函数的prototype属性值
@@ -426,7 +427,7 @@
                   // JS引擎: 解析执行我们的js代码的程序
 3. 原型链
     * 原型链(图解)
-        ![原型链](./原型链.png)
+        ![原型链](./image/原型链.png)
       * 访问一个对象的属性时，
         * 先在自身属性中查找，找到返回
         * 如果没有, 再沿着__proto__这条链向上查找, 找到返回
@@ -458,7 +459,7 @@
     
                 var o1 = new Object();
                 var o2 = {};
-        ![构造函数/原型/实体对象的关系](./构造函数:原型:实例对象的关系(图解).png)
+        ![构造函数/原型/实体对象的关系](./image/构造函数:原型:实例对象的关系(图解).png)
             
                 函数的prototype指向的是一个{}
                 console.log(Fn.prototype.__proto__===Object.prototype) // true
@@ -467,7 +468,7 @@
     * 构造函数/原型/实体对象的关系2(图解)
                 
                 function Foo(){  }
-        ![构造函数/原型/实体对象的关系2](./构造函数:原型:实例对象的关系2(图解).png)
+        ![构造函数/原型/实体对象的关系2](./image/构造函数:原型:实例对象的关系2(图解).png)
                         
                  1. 所有函数都有prototype和__proto__属性
                  2. 所有函数的__proto__属性都相同, 都等于Function.prototype
@@ -502,7 +503,7 @@
                   console.log(Function instanceof Object)
                   console.log(Function instanceof Function) // true
                   
-        ![](探索instanceof.png)
+        ![](./image/探索instanceof.png)
     * Function是通过new自己产生的实例
                 
                 console.log(Object instanceof Function);
@@ -512,7 +513,7 @@
                 
                 function Foo() {}
                 console.log(Object instanceof  Foo);
-        ![](探索instanceof2.png)
+        ![](./image/探索instanceof2.png)
 * 6.面试题
     * 测试题1:
     
@@ -641,9 +642,9 @@
     3. 在函数执行上下文创建后, 将其添加到栈中(压栈)
     4. 在当前函数执行完后,将栈顶的对象移除(出栈)
     5. 当所有的代码执行完后, 栈中只剩下window
-    ![](执行上下文棧流程分析1.png)
-    ![](执行上下文棧流程分析2.png)
-    ![](执行上下文棧流程分析3.png)
+    ![](./image/执行上下文棧流程分析1.png)
+    ![](./image/执行上下文棧流程分析2.png)
+    ![](./image/执行上下文棧流程分析3.png)
     
 4. 练习题
     * 测试题1:
@@ -1107,7 +1108,7 @@
               console.log(p1, p2)
 #### 二.继承模式
 1. 原型链继承
-        ![](原型链继承.png)
+        ![](./image/原型链继承.png)
     * 套路
         1. 定义父类型构造函数
         2. 给父类型的原型添加方法
@@ -1194,7 +1195,7 @@
                   console.log(s)
 #### 三.线程机制与事件机制
 1.  进程与线程
-    ![](进程与线程.png)
+    ![](./image/进程与线程.png)
     * 进程：程序的一次执行, 它占有一片独有的内存空间
     * 线程： CPU的基本调度单位, 是程序执行的一个完整流程
     * 进程与线程
@@ -1267,7 +1268,7 @@
         * 发送ajax请求
       * 后面在某个时刻才会执行回调代码
 5. 浏览器的事件循环(轮询)模型
-    ![](模型原理图.png)
+    ![](./image/模型原理图.png)
     * 所有代码分类
       * 初始化执行代码(同步代码): 包含绑定dom事件监听, 设置定时器, 发送ajax请求的代码
       * 回调执行代码(异步代码): 处理回调逻辑
@@ -1302,7 +1303,7 @@
                   }
                   console.log('--------')
 6. H5 Web Workers(多线程)
-    ![](./H5%20Web%20Workers(多线程).png)
+    ![](./image/H5%20Web%20Workers(多线程).png)
     * H5规范提供了js分线程的实现, 取名为: Web Workers
     * 相关API
       * Worker: 构造函数, 加载分线程执行的js文件
