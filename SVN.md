@@ -7,10 +7,10 @@
 * [分支](#e)
 * [WebStorm集成SVN](#f)
 * 附件：
-1. [服务器 安装文件](./attachment/VisualSVN-Server-2.7.1.msi)
-2. [客户端 安装文件](./attachment/TortoiseSVN-1.9.4.27285-x64-svn-1.9.4.msi)
-3. [webStorm集成配置](./attachment/Slik-Subversion-1.9.4-x64.msi)
-4. [软件安装使用示意图](./attachment/软件安装使用示意图.docx)
+    1. [服务器 安装文件](./attachment/VisualSVN-Server-2.7.1.msi)
+    2. [客户端 安装文件](./attachment/TortoiseSVN-1.9.4.27285-x64-svn-1.9.4.msi)
+    3. [webStorm集成配置](./attachment/Slik-Subversion-1.9.4-x64.msi)
+    4. [软件安装使用示意图](./attachment/软件安装使用示意图.docx)
 
 
 ## SVN
@@ -103,7 +103,7 @@
     * app 开发
 #### <div id='f'>六. WebStorm集成SVN</div>
 1. 安装svn的命令行工具Slik-Subversion-1.9.4-x64
-2. 配置指定slik
+2. 配置指定slik  
 ![](./image/svn配置slik.png)
-3. 将应用与SVN关联
+3. 将应用与SVN关联  
 ![](./image/WebStorm集成svn.png)
