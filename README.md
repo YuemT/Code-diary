@@ -10,7 +10,7 @@
 * 移动端
 * Node.js
 * Ajax
-* zepto
+* [zepto](./zepto.md)
 * [AngularJS](./angular.md)
 * [ES5_6_7](./ES5_6_7.md)
 * [modular模块化](./modular.md)
