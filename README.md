@@ -18,5 +18,5 @@
 * React
 * [版本控制](./版本控制工具.md)
     * [SVN](./SVN.md)
-    * Git
+    * [Git](./git.md)
 * [Vue](./vue.md)
