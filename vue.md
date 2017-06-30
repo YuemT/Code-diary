@@ -30,10 +30,10 @@
 
 
 ## <div id='a'>一.Vue是什么?</div>
-![](./vue的特点.png)
+![](./image/vue的特点.png)
 * 一位华裔前Google工程师开发的前端js库
 * 一个MVVM框架
-    ![](./mvvm.png)
+    ![](./image/mvvm.png)
 * 核心概念
     * 数据绑定
     * 组件
@@ -732,7 +732,7 @@
              
 14. <div id='e14'>vue对象的生命周期</div>
 
-    ![](./lifecycle.png)
+    ![](./image/lifecycle.png)
     
     * 初始化显示
         * new vue()
