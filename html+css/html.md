@@ -1,8 +1,8 @@
 #### 网页的基本组成
 一个设计优良的网页要求结构、表现和行为要三者分离
 * [HTML(结构)](#html)
-* CSS(表现)
-* JavaScript(行为)
+* [CSS(表现)](./css.md)
+* [JavaScript(行为)](../JavaScript/JavaScript.md)
 
 ## 目录
 #### <div id='html'>HTML</div>
