@@ -15,11 +15,10 @@
 * [AngularJS](Angular/angular.md)
 * [ES5_6_7](./ES5_6_7/ES5_6_7.md)
 * [modular模块化](Modular/modular.md)
-* project build项目构建
+* [项目构建](./项目构建/项目构建.md)
 * React
 * [版本控制](./版本控制/版本控制工具.md)
     * [SVN](./版本控制/SVN.md)
     * [Git](./版本控制/git.md)
-* [项目构建](./项目构建/项目构建.md)
 * [Vue](Vue/vue.md)
 
