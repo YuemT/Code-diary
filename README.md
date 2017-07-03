@@ -7,6 +7,7 @@
 * [JS Advance](./JavaScript/JSAdvance.md)
 * jQuery
 * HTML5+CSS3
+* [前端性能优化](./前端性能优化/前端性能优化.md)
 * 移动端
 * Node.js
 * [Ajax](./Ajax/ajax.md)
@@ -20,3 +21,4 @@
     * [SVN](./版本控制/SVN.md)
     * [Git](./版本控制/git.md)
 * [Vue](Vue/vue.md)
+
