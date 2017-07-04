@@ -21,7 +21,7 @@
     * [SVN](./版本控制/SVN.md)
     * [Git](./版本控制/git.md)
 * Vue
-    * [Vue](Vue/vue.md)
+    * [Vue](./Vue/vue.md)
     * Vue源码分析
-    * [Vuex](Vue/vuex.md)
+    * [Vuex](./Vue/vuex.md)
 
