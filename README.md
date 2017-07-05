@@ -23,4 +23,8 @@
 * [Vue](./Vue/vue.md)
     * Vue源码分析
     * [Vuex](./Vue/vuex.md)
-
+    * [Vue-cli](./Vue/vue-cli.md)
+    * [Vue-router](./Vue/vue-router.md)
+    * [Vue-ajax](./Vue/vue-ajax.md)
+    * [Vue组件化](./Vue/vue组件化.md)
+    
