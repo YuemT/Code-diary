@@ -30,10 +30,10 @@
 
 
 ## <div id='a'>一.Vue是什么?</div>
-![](./image/vue的特点.png)
+![](../Vue/image/vue的特点.png)
 * 一位华裔前Google工程师开发的前端js库
 * 一个MVVM框架
-    ![](./image/mvvm.png)
+    ![](../Vue/image/mvvm.png)
 * 核心概念
     * 数据绑定
     * 组件

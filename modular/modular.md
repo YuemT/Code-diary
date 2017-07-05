@@ -51,14 +51,14 @@
     编码: 全局变量／函数(将不同的功能封装成不同的全局函数)  
     问题: Global全局命名空间被污染了, 很容易引起命名冲突/数据不安全
     
-    ![Global](./image/1.png)
+    ![Global](../modular/image/1.png)
 
 * namespace模式  
     * 编码: 将数据/行为封装到对象中
     * 作用: 减少了全局变量(命名冲突)
     * 问题: 数据不安全(数据不是私有的, 外部可以直接修改模块内部的数据)
     
-    ![namespace](./image/2.png)
+    ![namespace](../modular/image/2.png)
     
 * IIFE模式
      * IIFE模式: 立即调用函数表达式---> 匿名函数自调用(闭包)
@@ -67,11 +67,11 @@
      * 作用: 数据是私有的, 外部只能通过暴露的方法操作
      * 问题: 如果当前这个模块依赖另一个模块怎么办?
      
-     ![namespace](./image/3.png)
+     ![namespace](../modular/image/3.png)
      
 * IIFE模式增强
 
-    ![namespace](./image/4.png)
+    ![namespace](../modular/image/4.png)
      * 引入依赖:通过函数形参来引入依赖模块 
      * 这就是现代模块实现的基石  
                 
@@ -90,7 +90,7 @@
     
 * 页面引入加载script引出的问题 
 
-     ![namespace](./image/6.png)
+     ![namespace](../modular/image/6.png)
      
     * 一个页面需要引入多个js文件
     * 请求过多:我们要依赖多个模块，那样就会发送多个请求，导致请求过多
@@ -105,7 +105,7 @@
         * 更高复用性
         * 高可维护性
         
-        ![namespace](./image/5.png)
+        ![namespace](../modular/image/5.png)
 
 ### 二.模块化规范
 ### <div id='b'>1.CommonJS</div>  
