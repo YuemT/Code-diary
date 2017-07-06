@@ -1,4 +1,46 @@
-#### 一.Ajax简介
+
+## 目录
+* [Ajax简介](#a)
+    * 什么是Ajax？  
+    * Ajax的应用场景
+    * 区别传统WEB请求与Ajax请求
+* [Ajax开发过程](#b)
+    * 原生API --- XMLHttpRequest对象
+    * 基本步骤：
+        1. 创建XMLHttpRequest对象
+        2. 设置监听回调
+        3. 发送请求
+        4. 相关API说明
+* [异步与同步Ajax请求](#c)
+    * 如何设置请求的同步或异步?
+    * 同步请求与异步请求的区别?
+    * 异步请求
+    * 同步请求
+* [框架使用 Ajax (jQuery)](#d)
+    * jQuery对原生AjaxAPI进行了很好的封装
+        * $.ajax（通用的方式）发送Ajax GET请求
+        * $.ajax（通用的方式）发送Ajax POST请求
+        * $.get() 发送Ajax请求
+        * $.post() 发送Ajax请求
+        * $.getJSON() Ajax请求JSON数据
+* [三级联动](#e)
+* [跨域请求](#f)
+    * 跨域的概念
+    * 同源策略
+    * 如何实现跨域请求?    
+        * JSONP( JSON with Padding )
+        * CORS( Cross-Origin Resource Sharing 跨域资源共享 )
+        * 其他方式( window.name )
+* [JS模板引擎](#g)
+    * 模版引擎是什么
+    * 为什么要用模板引擎?
+    * 常用的模板引擎
+    * 使用模板引擎
+        * 完成三级联动
+* [性能优化](#h)
+<br/><br/><br/><br/><br/><br/><br/>
+
+#### <div id='a'>一.Ajax简介</div>
 1. 什么是Ajax？  
  AJAX技术最早由由杰西·詹姆士·贾瑞特所提出。
  目的是为了减少表单提交过程中过多请求相同页面导致的带宽浪费问题，
@@ -59,9 +101,9 @@
         * 存在跨域请求问题
         * 对搜索引擎支持比较弱
         
-#### 二.Ajax开发过程
+#### <div id='b'>二.Ajax开发过程</div>
 原生API --- XMLHttpRequest对象
-###基本步骤：
+### 基本步骤：
 1. 创建XMLHttpRequest对象
 
         var xmlhttp;
@@ -161,7 +203,7 @@
             header：规定头的名称
             value：规定头的值
             
-#### 三.异步与同步Ajax请求
+#### <div id='c'>三.异步与同步Ajax请求</div>
 1. 如何设置请求的同步或异步?
 
         request.open(method, url, async)  
@@ -202,9 +244,9 @@
             };
 > 返回结果：发送之前－this.responseText－发送之后
 
-#### 四.框架使用 Ajax (jQuery)
-####jQuery对原生AjaxAPI进行了很好的封装
-    * $.ajax（通用的方式）发送Ajax GET请求
+#### <div id='d'>四.框架使用 Ajax (jQuery)</div>
+#### jQuery对原生AjaxAPI进行了很好的封装
+* $.ajax（通用的方式）发送Ajax GET请求
     
             $(function () {//等同于document.ready  文档加载完(DOM结构)就执行，window.onload是整个页面的所有内容加载完，包括图片等资源
                 $('#ajaxGetBtn').click(function () {
@@ -228,7 +270,7 @@
                     });
                 });
     
-    * $.ajax（通用的方式）发送Ajax POST请求
+* $.ajax（通用的方式）发送Ajax POST请求
     
             $('#ajaxPostBtn').click(function () {
                 var obj = {
@@ -248,7 +290,7 @@
                 });
             });
                 
-    * $.get() 发送Ajax请求
+* $.get() 发送Ajax请求
     
             $('#getBtn').click(function () {
                 var obj = {
@@ -259,7 +301,7 @@
                  },'text')
             });
             
-    * $.post() 发送Ajax请求
+* $.post() 发送Ajax请求
     
              $('#postBtn').click(function () {
                  var obj = {
@@ -269,7 +311,7 @@
                      console.log(typeof msg, msg);
                  })
              });   
-    * $.getJSON() Ajax请求JSON数据
+* $.getJSON() Ajax请求JSON数据
     
              $('#getJSONBtn').click(function () {
                  var obj = {
@@ -279,29 +321,29 @@
                      console.log(typeof msg, msg);
                  });
              });
-* 三级联动 思路：
+#### <div id='e'>三级联动 思路：</div>
 
-    *   1、数据如何获取---->动态获取---->发送ajax请求获取
-    *   2、当页面渲染好，加载显示哪些数据？
+1. 数据如何获取---->动态获取---->发送ajax请求获取
+2. 当页面渲染好，加载显示哪些数据？
     
             首次显示省份数据
             当选择某一个省的时候自动加载填充对应的城市
             当选择某一个城市的时候自动加载填充对应的县/区
-    *   3、当点击省份的时候加载，填充对应的城市
+3. 当点击省份的时候加载，填充对应的城市
     
             根据省份的 id来获取对应的城市   provinceId
             请求方式 ： get
             请求url ： /cities
             请求参数 ： provinceId
             
-    *   4、当点击城市的时候加载，填充对应的县/区
+4. 当点击城市的时候加载，填充对应的县/区
     
              根据城市的 id来获取对应的城市   cityId
              请求方式 ： get
              请求url ： /counties
              请求参数 ： cityId
 
-#### 五.跨域请求
+#### <div id='f'>五.跨域请求</div>
 1. 跨域的概念
     * 不同源就是跨域，其中包括：
         * 协议名不同（http／https）
@@ -411,7 +453,7 @@
             * CORS 可以使用 XmlHttpRequest 进行传输，所以它的错误处理方式比 JSONP 好。
             * JSONP 可以在不支持 CORS 的老旧浏览器上运作。
         
-#### 六.JS模板引擎
+#### <div id='g'>六.JS模板引擎</div>
 1. 模版引擎是什么
     * 模板预定义一些模板语法
     * 程序员使用模板简洁的展现数据(多)
@@ -477,7 +519,7 @@
             });
     
         });
-#### 七.性能优化
+#### <div id='h'>七.性能优化</div>
 * 问题描述:
     * 在同一时间段发送多个ajax异步请求时，由于事件回调函数结果返回时间的不确定性，会导致返回的页面错乱。
 
