@@ -11,7 +11,7 @@
 * 移动端
 * Node.js
 * [Ajax](./Ajax/ajax.md)
-* [zepto](Zepto/zepto.md)
+* [zepto](./Zepto/zepto.md)
 * [AngularJS](Angular/angular.md)
 * [ES5_6_7](./ES5_6_7/ES5_6_7.md)
 * [modular模块化](./modular/modular.md)
