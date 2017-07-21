@@ -7,7 +7,7 @@
 * state: 驱动应用的数据源
 * view: 以声明方式将state映射到视图
 * actions: 响应在view上的用户输入导致的状态变化(包含n个更新状态的方法)
-![单向数据流](./image/flow.png)
+![单向数据流](../image/flow.png)
            
            state,状态,指的是data中数据的状态，view代表页面视图，view通过读取
            data中的数据，动态显示页面，当state的状态发生改变的时候，view页面也
