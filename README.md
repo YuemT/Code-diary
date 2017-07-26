@@ -1,8 +1,8 @@
 # Code-diary
 前端开发学习记录(包括html＋css＋js,jQuery,html5+css3,移动端,Node.js,AngularJS,zepto,ES5_6_7...等等)
 ## 目录
-* [HTML](Html+css/html.md)
-* [CSS](Html+css/css.md)
+* [HTML](html+css/html.md)
+* [CSS](html+css/css.md)
 * [JavaScript](./JavaScript/JavaScript.md)
 * [JS Advance](./JavaScript/JSAdvance.md)
 * jQuery
@@ -12,7 +12,7 @@
 * Node.js
 * [Ajax](./Ajax/ajax.md)
 * [zepto](./zepto/zepto.md)
-* [AngularJS](Angular/angular.md)
+* [AngularJS](angular/angular.md)
 * [ES5_6_7](./ES5_6_7/ES5_6_7.md)
 * [modular模块化](./modular/modular.md)
 * [项目构建](./项目构建/项目构建.md)
