@@ -16,7 +16,7 @@
 * [ES5_6_7](./ES5_6_7/ES5_6_7.md)
 * [modular模块化](./modular/modular.md)
 * [项目构建](./项目构建/项目构建.md)
-* React
+* [React](./React/React.md)
 * [版本控制](./版本控制/版本控制工具.md)
     * [SVN](./版本控制/SVN.md)
     * [Git](./版本控制/git.md)
